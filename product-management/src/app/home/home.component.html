@@ -1,0 +1,32 @@
+<!-- src/app/home/home.component.html -->
+<app-login></app-login>
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span class="toolbar-spacer"></span>
+  <button mat-icon-button aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="content-container">
+  <mat-card class="product-create-card">
+    <mat-card-header>
+      <mat-card-title>Create New product</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <app-product-create></app-product-create>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="product-list-card">
+    <mat-card-header>
+      <mat-card-title>product List</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <app-product-list></app-product-list>
+    </mat-card-content>
+  </mat-card>
+</div>
